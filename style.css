@@ -1,4 +1,16 @@
 body
 {
-    background-color: red;
+
+}
+
+.div1
+{
+    height: 500px;
+    background-color: yellow;
+    padding: 3%;
+}
+.div2
+{
+    height: 500px;
+    background-color: blue;
 }
