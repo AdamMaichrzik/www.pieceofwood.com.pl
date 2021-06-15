@@ -1,14 +1,17 @@
 
+
+
+
 .div1
 {
     height: 500px;
-    background-color: yellow;
     padding: 3%;
 }
 #div2
 {
-    height: 500px;
-    background-color: blue;
+    background-size: cover;
+	background-position: center;
+    height: 100%;
 }
 
 /* Deleting button styling */
@@ -20,4 +23,31 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+.navBarLogo
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    opacity:1;
+}
+
+.navBarLogo a:visited
+{
+    text-decoration: none;
+    color: white;
+}
+.navBarLogo a:hover
+{
+    text-decoration: none;
+    color: white;
+    opacity:0.5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
 }
