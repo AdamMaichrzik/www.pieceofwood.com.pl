@@ -14,20 +14,16 @@
         <div class="row">
             <div class="col-4 div1">
                 <ul>
-                    <li>Life</li>
-                    <li><button onclick="changePhoto()">Life</button></li>
-                    <li>Life</li>
-                    <li>Life</li>
-                    <li>Life</li>
-                    <li>Life</li>
-                    <li>Life</li>
-                    <li>Life</li>
+                    <li><button id="1" onclick="changePhoto(this.id)">Frame</button></li>
+                    <li><button id="2" onclick="changePhoto(this.id)">Life</button></li>
+                    <li><button id="3" onclick="changePhoto(this.id)">Life</button></li>
+                    <li><button id="4" onclick="changePhoto(this.id)">Life</button></li>
                     <li>Life</li>
                     <li>Life</li>
                 </ul>
             </div>
             <div id="div2" class="col-8">
-                <img class="img-fluid" src="/img/3.jpg" style="height: 100%;">
+                <img class="img-fluid" src="/img/art1.jpg" style="height: 100%;">
             </div>
         </div>
     </div>
@@ -36,9 +32,9 @@
 
 <!-- Scripts -->
 <script>
-    function changePhoto()
+    function changePhoto(list_id)
     {
-        document.getElementById("div2").innerHTML = '<img class="img-fluid" src="/img/6.jpg" style="height: 100%;">';
+        document.getElementById("div2").innerHTML = '<img class="img-fluid" src="/img/art'+ list_id +'.jpg" style="height: 100%;">';
     }
 </script>
 <!-- Bootstrap script -->
