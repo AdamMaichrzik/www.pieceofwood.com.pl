@@ -81,3 +81,8 @@ button, input[type="submit"], input[type="reset"] {
         0%{opacity:0}
         100%{opacity:1}
     }
+
+
+    .object{    
+        visibility: hidden;
+    }
