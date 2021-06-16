@@ -82,21 +82,21 @@ button, input[type="submit"], input[type="reset"] {
     letter-spacing: 1px;
 }
 
-.slideText
-{
-    visibility: hidden;
-}
-.slideExpandUpText
-{
-    visibility: hidden;
-}
-
 .workingPhoto
 {
     margin-top: 10%; 
     margin-left: 8%;
 }
 
+.header
+{
+    text-align: center; 
+    z-index: 100; 
+    background-color: white;
+    height: 100%; 
+    padding: 3%; 
+    letter-spacing: 1px;
+}
 
 @media (max-width: 576px)
 {
@@ -117,5 +117,15 @@ button, input[type="submit"], input[type="reset"] {
     .workingPhoto
     {
         margin-left: 3%;
+    }
+
+    .header
+    {
+        margin-left: 3%;
+        height: 35%; 
+    }
+    .secondText
+    {
+        font-size: 5vw;
     }
 }
