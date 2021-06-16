@@ -14,7 +14,8 @@
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-
+<!-- jQuery library -->
+<script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -52,13 +53,14 @@
         </div>
       </div>
 
-
-
     <div class="container" style="margin-top: 3%;">
-        <div class="row">
-
+        <div class="row"> 
+            <p class="mainText">Piece of Wood to niewielka pracownia w malym miasteczku na poludniu Bawarii:
+                Wyspecjalizowala się w kreowaniu nowych form ze starego, lokalnie odzyskiwanego drewna.
+                W swojej kolekcji posiada drewniane kompozycje, mozaiki scienne, kalendarze, zegary i wiele innych elementów dekoracyjnych.
+            </p>
         </div>
-        <div class="row">
+        <div class="row" >
             <div class="col-md-5">
                 <img src="img/3.jpg" class="img-fluid leftPhoto" alt="">
             </div>
@@ -68,6 +70,9 @@
             </div>
         </div>
     </div>
+    <img src="img/6.jpg" class="img-fluid star" alt="" width="500px" height="500px">
+    <img src="img/6.jpg" class="img-fluid star" alt="" width="500px" height="500px">
+    <img src="img/6.jpg" class="img-fluid star" alt="" width="500px" height="500px">
     <!-- Footer -->
     <footer class="bg-dark text-center text-white" style="margin-top: 3%;">
         <div class="container">
@@ -96,11 +101,32 @@
 
 <!-- Scripts -->
 <script>
+   function showImages(el) {
+  var windowHeight = jQuery(window).height();
+  $(el).each(function() {
+    var thisPos = $(this).offset().top;
 
+    var topOfWindow = $(window).scrollTop();
+    if (topOfWindow + windowHeight - 200 > thisPos) {
+      $(this).addClass("fadeIn");
+    }
+  });
+}
+
+// if the image in the window of browser when the page is loaded, show that image
+$(document).ready(function() {
+  showImages('.star');
+});
+
+// if the image in the window of browser when scrolling the page, show that image
+$(window).scroll(function() {
+  showImages('.star');
+});
 </script>
 <!-- Bootstrap script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>

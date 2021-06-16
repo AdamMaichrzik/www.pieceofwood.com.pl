@@ -52,3 +52,32 @@ button, input[type="submit"], input[type="reset"] {
     -o-transition: opacity .5s ease-out;
 }
 
+.leftPhoto
+{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+}
+
+.mainText
+{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 50px;
+}
+
+
+    .star {
+        visibility: hidden;
+    }
+
+    .fadeIn {
+        -webkit-animation: animat_show 0.8s;
+        animation: animat_show 0.8s;
+        visibility: visible !important;
+    }
+
+    @keyframes animat_show{
+        0%{opacity:0}
+        100%{opacity:1}
+    }
