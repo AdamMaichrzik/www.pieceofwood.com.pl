@@ -83,7 +83,7 @@
         </div>
         <div class="col-md-6" style="padding: 5%;">
             <h1>NIEPOWTARZALNOSC -  uwazam, ze wlasnie to jest największą wartościa rekodziela.</h1>
-            <p class="secondText slideText">
+            <p class="secondText">
                 Piece of Wood to niewielka pracownia w malym miasteczku na poludniu Bawarii:
                 Wyspecjalizowala się w kreowaniu nowych form ze starego, lokalnie odzyskiwanego drewna.
                 W swojej kolekcji posiada drewniane kompozycje, mozaiki scienne, kalendarze, zegary i wiele innych elementów dekoracyjnych.
@@ -99,10 +99,14 @@
             <div class="col-md-6">
                 <img src="img/usaFlagInterior.jpg" class="img-fluid object" alt="">
             </div>
-            <div class="col-md-6" style="padding: 3%;"> 
-            <h1>Doskonałym uzupełnieniem niemal każdego pomieszczenia mogą okazać się ściany ozdobione przedmiotami z naturalnego drewna.</h1>
-
-            <p class="secondText slideExpandUpText">
+            <div class="col-md-6"> 
+                <img src="img/frame.jpg" class="img-fluid object" alt="">
+            </div>
+            <div class="row" style="margin-top: 3%; padding: 3%;">
+                <h1 style="text-align: center; margin-top: -300px; z-index: 100; background-color: white; height: 100%; padding: 3%; letter-spacing: 1px;">
+                    Doskonałym uzupełnieniem niemal każdego pomieszczenia mogą okazać się ściany ozdobione przedmiotami z naturalnego drewna.
+                </h1>
+            <p class="secondText">
                 Doskonałym uzupełnieniem niemal każdego pomieszczenia mogą okazać się ściany ozdobione przedmiotami z naturalnego drewna.
                 Ten surowiec, wykorzystywany najczęściej w przypadku podłóg czy mebli, w tak niecodziennej oprawie moze stać się jednym z najbardziej charakterystycznych elementów wnętrza.
                 Kolorowe kompozycje z wielu drewnianych kawałków  ożywiają przestrzeń, tworzą klimat, dodają charakteru w dużym stopniu świadcząc o guście domowników.
@@ -173,28 +177,6 @@
 		var topOfWindow = $(window).scrollTop();
 			if (imagePos < topOfWindow+550) {
 				$(this).addClass("slideUp");
-			}
-		});
-	});
-
-	$(window).scroll(function() {
-		$('.slideText').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("slideLeft");
-			}
-		});
-	});
-
-	$(window).scroll(function() {
-		$('.slideExpandUpText').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+400) {
-				$(this).addClass("fadeIn");
 			}
 		});
 	});
