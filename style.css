@@ -41,6 +41,7 @@ button, input[type="submit"], input[type="reset"] {
     text-decoration: none;
     color: white;
 }
+
 .navBarLogo a:hover
 {
     text-decoration: none;
@@ -63,7 +64,6 @@ button, input[type="submit"], input[type="reset"] {
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
-    border-radius: 13px;
 }
 
 .object:hover
@@ -71,6 +71,31 @@ button, input[type="submit"], input[type="reset"] {
     opacity: 0.8;
     cursor: pointer;
 }
+
+
+
+
+.secondText
+{
+    font-size: 2rem;
+    padding-top: 5%;
+}
+
+.slideText
+{
+    visibility: hidden;
+}
+.slideExpandUpText
+{
+    visibility: hidden;
+}
+
+.workingPhoto
+{
+    margin-top: 10%; 
+    margin-left: 8%;
+}
+
 
 @media (max-width: 576px)
 {
@@ -82,5 +107,14 @@ button, input[type="submit"], input[type="reset"] {
     .object
     {
         padding-top: 8%;
+    }
+    .socialButton
+    {
+        font-size: 21px;
+    }
+
+    .workingPhoto
+    {
+        margin-left: 3%;
     }
 }
