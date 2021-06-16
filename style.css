@@ -52,37 +52,35 @@ button, input[type="submit"], input[type="reset"] {
     -o-transition: opacity .5s ease-out;
 }
 
-.leftPhoto
-{
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
-}
-
 .mainText
 {
     font-size: 2rem;
     letter-spacing: 1px;
-    padding: 50px;
 }
 
+.object{    
+    visibility: hidden;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 13px;
+}
 
-    .star {
-        visibility: hidden;
+.object:hover
+{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media (max-width: 576px)
+{
+    .mainText
+    {
+        text-align: justify;
+        padding: 5%;
     }
-
-    .fadeIn {
-        -webkit-animation: animat_show 0.8s;
-        animation: animat_show 0.8s;
-        visibility: visible !important;
+    .object
+    {
+        padding-top: 8%;
     }
-
-    @keyframes animat_show{
-        0%{opacity:0}
-        100%{opacity:1}
-    }
-
-
-    .object{    
-        visibility: hidden;
-    }
+}
