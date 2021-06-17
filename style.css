@@ -150,6 +150,7 @@ button, input[type="submit"], input[type="reset"] {
 
     .header
     {
+        display: none;
         margin-left: 2.5%;
         height: 36%; 
     }
