@@ -1,9 +1,7 @@
 body
 {
-    font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
 }
-
 
 /* Deleting button styling */
 button, input[type="submit"], input[type="reset"] {
