@@ -47,6 +47,11 @@ input[type="reset"] {
 	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
+.slideUpText
+{
+    visibility: hidden;
+}
+
 .object:hover {
 	opacity: 0.8;
 	cursor: pointer;
