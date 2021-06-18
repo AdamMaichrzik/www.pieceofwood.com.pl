@@ -77,7 +77,7 @@ input[type="reset"] {
 	letter-spacing: 1px;
 }
 
-.parallax {
+.parallax1 {
 	/* The image used */
 	background-image: url("img/parallax1.jpg");
 	/* Set a specific height */
