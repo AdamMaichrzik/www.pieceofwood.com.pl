@@ -201,6 +201,11 @@ a:hover {
 	transition: opacity 0.15s ease-in-out;
 }
 
+.contactButton
+{
+    font-size: 2vw;
+}
+
 /* MEDIA */
 
 @media (max-width: 576px) {
