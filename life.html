@@ -78,19 +78,25 @@
         </div>
         <div class="row" style="margin-top: 3%;">
             <div class="col-md-6">
-                <div id="1" class="col-md-3">
-                    <img src="img/carousel1.jpeg" class="img-fluid photoShadow" alt="">
-                </div>
-                <div id="2" class="col-md-3">
-                    <button onclick="changeImageButton()">
-                        <img src="img/carousel2.jpeg" class="img-fluid photoShadow" alt="">
+                <div id="smallCarousel1" class="col-md-3">
+                    <button class="photoShadow" id="button1" onclick="changeImageButton(this.id)">
+                        <img src="img/carousel1.jpeg" class="img-fluid" alt="">
                     </button>
                 </div>
-                <div id="3" class="col-md-3">
-                    <img src="img/carousel3.jpeg" class="img-fluid photoShadow" alt="">
+                <div id="smallCarousel2" class="col-md-3">
+                    <button  class="photoShadow" id="button2" onclick="changeImageButton(this.id)">
+                        <img src="img/carousel2.jpeg" class="img-fluid " alt="">
+                    </button>
                 </div>
-                <div id="4" class="col-md-3">
-                    <img src="img/carousel4.jpeg" class="img-fluid photoShadow" alt="">
+                <div id="smallCarousel3" class="col-md-3">
+                    <button class="photoShadow" id="button3" onclick="changeImageButton(this.id)">
+                        <img src="img/carousel3.jpeg" class="img-fluid " alt="">
+                    </button>
+                </div>
+                <div id="smallCarousel4" class="col-md-3">
+                    <button class="photoShadow" id="button4" onclick="changeImageButton(this.id)">
+                        <img src="img/carousel4.jpeg" class="img-fluid " alt="">
+                    </button>
                 </div>
             </div>
             
@@ -197,49 +203,53 @@ function goRigth()
 
     if(clickNumber == 5)
     {
-        document.getElementById("1").innerHTML = '<img src="img/carousel5.jpeg" class="img-fluid photoShadow" alt="">';
-        document.getElementById("2").innerHTML = '<img src="img/carousel6.jpeg" class="img-fluid photoShadow" alt="">';
-        document.getElementById("3").innerHTML = '<img src="img/carousel7.jpeg" class="img-fluid photoShadow" alt="">';
-        document.getElementById("4").innerHTML = '<img src="img/carousel8.jpeg" class="img-fluid photoShadow" alt="">';
+        document.getElementById("smallCarousel1").innerHTML = '<button class="photoShadow" id="button5" onclick="changeImageButton(this.id)"><img src="img/carousel5.jpeg" class="img-fluid " alt=""></button>';
+        document.getElementById("smallCarousel2").innerHTML = '<button class="photoShadow" id="button6" onclick="changeImageButton(this.id)"><img src="img/carousel6.jpeg" class="img-fluid " alt=""></button>';
+        document.getElementById("smallCarousel3").innerHTML = '<button class="photoShadow" id="button7" onclick="changeImageButton(this.id)"><img src="img/carousel7.jpeg" class="img-fluid " alt=""></button>';
+        document.getElementById("smallCarousel4").innerHTML = '<button class="photoShadow" id="button8" onclick="changeImageButton(this.id)"><img src="img/carousel8.jpeg" class="img-fluid " alt=""></button>';
     }
 
     if(clickNumber > carouselLength)
     {
         clickNumber = 1;
-        document.getElementById("carouselActivePhoto").innerHTML = '<img src="img/carousel1.jpeg" class="img-fluid slideRight" alt=""><div style="position: absolute; top: 50%; right: 5%; font-size: 50px; color: red;"> <button onclick="goRigth()"> > </button> </div><div style="position: absolute; top: 50%; left: 5%; font-size: 50px; color: red;"><button onclick="goLeft()"> < </button></div>';
-        document.getElementById("1").innerHTML = '<img src="img/carousel1.jpeg" class="img-fluid photoShadow" alt="">';
-        document.getElementById("2").innerHTML = '<img src="img/carousel2.jpeg" class="img-fluid photoShadow" alt="">';
-        document.getElementById("3").innerHTML = '<img src="img/carousel3.jpeg" class="img-fluid photoShadow" alt="">';
-        document.getElementById("4").innerHTML = '<img src="img/carousel4.jpeg" class="img-fluid photoShadow" alt="">';
+        document.getElementById("carouselActivePhoto").innerHTML = '<img src="img/carousel1.jpeg" class="img-fluid slideRight photoShadow" alt=""><div style="position: absolute; top: 50%; right: 5%; font-size: 50px; color: red;"> <button onclick="goRigth()"> > </button> </div><div style="position: absolute; top: 50%; left: 5%; font-size: 50px; color: red;"><button onclick="goLeft()"> < </button></div>';
+        document.getElementById("smallCarousel1").innerHTML = '<button class="photoShadow" id="button1" onclick="changeImageButton(this.id)"><img src="img/carousel1.jpeg" class="img-fluid " alt=""></button>';
+        document.getElementById("smallCarousel2").innerHTML = '<button class="photoShadow" id="button2" onclick="changeImageButton(this.id)"><img src="img/carousel2.jpeg" class="img-fluid " alt=""></button>';
+        document.getElementById("smallCarousel3").innerHTML = '<button class="photoShadow" id="button3" onclick="changeImageButton(this.id)"><img src="img/carousel3.jpeg" class="img-fluid " alt=""></button>';
+        document.getElementById("smallCarousel4").innerHTML = '<button class="photoShadow" id="button4" onclick="changeImageButton(this.id)"><img src="img/carousel4.jpeg" class="img-fluid " alt=""></button>';
     }
 }
 
 function goLeft()
 {
     clickNumber --;
-    document.getElementById("carouselActivePhoto").innerHTML = '<img src="img/carousel' + clickNumber + '.jpeg" class="img-fluid slideRight" alt=""><div style="position: absolute; top: 50%; right: 5%; font-size: 50px; color: red;"> <button onclick="goRigth()"> > </button> </div><div style="position: absolute; top: 50%; left: 5%; font-size: 50px; color: red;"><button onclick="goLeft()"> < </button></div>';
+    document.getElementById("carouselActivePhoto").innerHTML = '<img src="img/carousel' + clickNumber + '.jpeg" class="img-fluid slideRight photoShadow" alt=""><div style="position: absolute; top: 50%; right: 5%; font-size: 50px; color: red;"> <button onclick="goRigth()"> > </button> </div><div style="position: absolute; top: 50%; left: 5%; font-size: 50px; color: red;"><button onclick="goLeft()"> < </button></div>';
     if(clickNumber <= 0)
     {
         clickNumber = 8;
         document.getElementById("carouselActivePhoto").innerHTML = '<img src="img/carousel8.jpeg" class="img-fluid slideRight photoShadow" alt=""><div style="position: absolute; top: 50%; right: 5%; font-size: 50px; color: red;"> <button onclick="goRigth()"> > </button> </div><div style="position: absolute; top: 50%; left: 5%; font-size: 50px; color: red;"><button onclick="goLeft()"> < </button></div>';
-        document.getElementById("1").innerHTML = '<img src="img/carousel5.jpeg" class="img-fluid photoShadow" alt="">';
-        document.getElementById("2").innerHTML = '<img src="img/carousel6.jpeg" class="img-fluid photoShadow" alt="">';
-        document.getElementById("3").innerHTML = '<img src="img/carousel7.jpeg" class="img-fluid photoShadow" alt="">';
-        document.getElementById("4").innerHTML = '<img src="img/carousel8.jpeg" class="img-fluid photoShadow" alt="">';
+        document.getElementById("smallCarousel1").innerHTML = '<button class="photoShadow" id="button5" onclick="changeImageButton(this.id)"><img src="img/carousel5.jpeg" class="img-fluid " alt=""></button>';
+        document.getElementById("smallCarousel2").innerHTML = '<button class="photoShadow" id="button6" onclick="changeImageButton(this.id)"><img src="img/carousel6.jpeg" class="img-fluid " alt=""></button>';
+        document.getElementById("smallCarousel3").innerHTML = '<button class="photoShadow" id="button7" onclick="changeImageButton(this.id)"><img src="img/carousel7.jpeg" class="img-fluid " alt=""></button>';
+        document.getElementById("smallCarousel4").innerHTML = '<button class="photoShadow" id="button8" onclick="changeImageButton(this.id)"><img src="img/carousel8.jpeg" class="img-fluid " alt=""></button>';
     }
 
     if(clickNumber == 4)
     {
-        document.getElementById("1").innerHTML = '<img src="img/carousel1.jpeg" class="img-fluid photoShadow" alt="">';
-        document.getElementById("2").innerHTML = '<img src="img/carousel2.jpeg" class="img-fluid photoShadow" alt="">';
-        document.getElementById("3").innerHTML = '<img src="img/carousel3.jpeg" class="img-fluid photoShadow" alt="">';
-        document.getElementById("4").innerHTML = '<img src="img/carousel4.jpeg" class="img-fluid photoShadow" alt="">';
+        document.getElementById("smallCarousel1").innerHTML = '<button class="photoShadow" id="button1" onclick="changeImageButton(this.id)"><img src="img/carousel1.jpeg" class="img-fluid " alt=""></button>';
+        document.getElementById("smallCarousel2").innerHTML = '<button class="photoShadow" id="button2" onclick="changeImageButton(this.id)"><img src="img/carousel2.jpeg" class="img-fluid " alt=""></button>';
+        document.getElementById("smallCarousel3").innerHTML = '<button class="photoShadow" id="button3" onclick="changeImageButton(this.id)"><img src="img/carousel3.jpeg" class="img-fluid " alt=""></button>';
+        document.getElementById("smallCarousel4").innerHTML = '<button class="photoShadow" id="button4" onclick="changeImageButton(this.id)"><img src="img/carousel4.jpeg" class="img-fluid" alt=""></button>';
+
     }
 }
 
-function changeImageButton()
+function changeImageButton(buttonID)
 {
-
+    // Get only number from button ID to change the photo
+    var photoChangeButton = buttonID.slice(6,7);
+    clickNumber = photoChangeButton;
+    document.getElementById("carouselActivePhoto").innerHTML = '<img src="img/carousel' + photoChangeButton + '.jpeg" class="img-fluid slideRight" alt=""><div style="position: absolute; top: 50%; right: 5%; font-size: 50px; color: red;"> <button onclick="goRigth()"> > </button> </div><div style="position: absolute; top: 50%; left: 5%; font-size: 50px; color: red;"><button onclick="goLeft()"> < </button></div>';
 }
 </script>
 
