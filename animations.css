@@ -172,7 +172,7 @@ slideRight
 }
 
 @keyframes slideRight {
-	0% {
+	3% {
 		transform: translateX(-150%);
 	}
 
