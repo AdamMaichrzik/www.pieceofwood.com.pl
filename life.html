@@ -50,96 +50,53 @@
 		</div>
 	</div>
 <!-- Content-->
-<div class="container">
-    <div class="row" style="margin-top: 8%;">
-        <div class="col-md-6">
-            <div id="myCarousel" class="carousel slide">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner photoShadow">
-        
-                <div class="item active">
-                    <img src="img/bigArts/lifeShadow.jpg" class="img-fluid" alt="Los Angeles" style="width:100%; height: 80%;">
-                    <div class="carousel-caption"></div>
+    <!-- MY CAROUSEL -->
+    <div class="container">
+        <div class="row" style="margin-top: 3%;">
+            <div id="carouselActivePhoto" class="col-md-6">
+                <img src="img/carousel1.jpeg" class="img-fluid slideRight photoShadow" alt="">
+                <div class="text" style="position: absolute; top: 50%; right: 5%; font-size: 50px; color: white;"> 
+                    <button onclick="goRigth()"> > </button> 
                 </div>
-            
-                <div class="item">
-                    <img src="img/carousel2.jpeg" class="img-fluid" alt="Chicago" style="width:100%; height: 80%;">
-                    <div class="carousel-caption"></div>
+                <div style="position: absolute; top: 50%; left: 5%; font-size: 50px; color: white;">
+                    <button onclick="goLeft()"> < </button>
                 </div>
-                
-                <div class="item">
-                    <img src="img/carousel3.jpeg" class="img-fluid" alt="New York" style="width:100%; height: 80%;">
-                    <div class="carousel-caption"></div>
-                </div>
-        
-                <div class="item">
-                    <img src="img/carousel4.jpeg" class="img-fluid" alt="New York" style="width:100%; height: 80%;">
-                    <div class="carousel-caption"></div>
-                </div>
-        
-                <div class="item">
-                    <img src="img/carousel5.jpeg" class="img-fluid" alt="New York" style="width:100%; height: 80%;">
-                    <div class="carousel-caption"></div>
-                </div>
-
-                <div class="item">
-                    <img src="img/carousel6.jpeg" class="img-fluid" alt="New York" style="width:100%; height: 80%;">
-                    <div class="carousel-caption"></div>
-                </div>
-
-                <div class="item">
-                    <img src="img/carousel7.jpg" class="img-fluid" alt="New York" style="width:100%; height: 80%;">
-                    <div class="carousel-caption"></div>
-                </div>
-
-                <div class="item">
-                    <img src="img/carousel8.jpeg" class="img-fluid" alt="New York" style="width:100%; height: 80%;">
-                    <div class="carousel-caption"></div>
-                </div>
-                <button onClick="previousPhotoSet()">
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                </button>
-               
-                <button onClick="nextPhotoSet()">
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </button>
             </div>
+            <div class="col-md-6">
+                <h1 style="font-size: 5vw;">Specyfikacja</h1>
+                <p style="font-size: 1.5vw; text-align: left; margin-top: 8%; margin-left: 8%;">
+                    Wysokość: 100cm <br>
+                    Szerokość: 150 cm <br>
+                    Grubość: 4 cm <br> <br>
+    
+                    Materiał dąb w 100% naturalny itp. 
+                    Ut vel pharetra lectus. 
+                    Phasellus convallis scelerisque sem, quis venenatis nunc lacinia at.
+                </p>
+                </p>
             </div>
-            <div class="row" style="margin-top: 3%;">
-                <div class="col-md-3" id="1">
+        </div>
+        <div class="row" style="margin-top: 3%;">
+            <div class="col-md-6">
+                <div id="1" class="col-md-3">
                     <img src="img/carousel1.jpeg" class="img-fluid photoShadow" alt="">
                 </div>
-                <div class="col-md-3" id="2">
+                <div id="2" class="col-md-3">
                     <img src="img/carousel2.jpeg" class="img-fluid photoShadow" alt="">
                 </div>
-                <div class="col-md-3" id="3">
+                <div id="3" class="col-md-3">
                     <img src="img/carousel3.jpeg" class="img-fluid photoShadow" alt="">
                 </div>
-                <div class="col-md-3" id="4">
+                <div id="4" class="col-md-3">
                     <img src="img/carousel4.jpeg" class="img-fluid photoShadow" alt="">
                 </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <h1 style="font-size: 5vw;">Specyfikacja</h1>
-            <p style="font-size: 1.5vw; text-align: left; margin-top: 8%; margin-left: 8%;">
-                Wysokość: 100cm <br>
-                Szerokość: 150 cm <br>
-                Grubość: 4 cm <br> <br>
-
-                Materiał dąb w 100% naturalny itp. 
-                Ut vel pharetra lectus. 
-                Phasellus convallis scelerisque sem, quis venenatis nunc lacinia at.
-            </p>
-            </p>
+            
         </div>
     </div>
+ 
+    </div>
+    <!-- Another arts-->
     <div class="row">
         <h1 style="font-size: 5vw;"> Inne moje prace</h1>
         <div class="col-md-3" style="padding: 1%;">
@@ -229,28 +186,54 @@
 </script>
 <!-- Test script-->
 <script>
+var clickNumber = 1;
+var carouselLength = 8;
+function goRigth()
+{
+    clickNumber ++;
+    document.getElementById("carouselActivePhoto").innerHTML = '<img src="img/carousel' + clickNumber + '.jpeg" class="img-fluid slideRight photoShadow" alt=""><div style="position: absolute; top: 50%; right: 5%; font-size: 50px; color: red;"> <button onclick="goRigth()"> > </button> </div><div style="position: absolute; top: 50%; left: 5%; font-size: 50px; color: red;"><button onclick="goLeft()"> < </button></div>';
 
-var clicks = 0;
-
-function nextPhotoSet() {
-  clicks += 1;
-  if(clicks == 4)
+    if(clickNumber == 5)
     {
         document.getElementById("1").innerHTML = '<img src="img/carousel5.jpeg" class="img-fluid photoShadow" alt="">';
         document.getElementById("2").innerHTML = '<img src="img/carousel6.jpeg" class="img-fluid photoShadow" alt="">';
-        document.getElementById("3").innerHTML = '<img src="img/carousel7.jpg" class="img-fluid photoShadow" alt="">';
+        document.getElementById("3").innerHTML = '<img src="img/carousel7.jpeg" class="img-fluid photoShadow" alt="">';
         document.getElementById("4").innerHTML = '<img src="img/carousel8.jpeg" class="img-fluid photoShadow" alt="">';
     }
 
-    if(clicks == 8)
+    if(clickNumber > carouselLength)
     {
-        clicks = 0;
+        clickNumber = 1;
+        document.getElementById("carouselActivePhoto").innerHTML = '<img src="img/carousel1.jpeg" class="img-fluid slideRight" alt=""><div style="position: absolute; top: 50%; right: 5%; font-size: 50px; color: red;"> <button onclick="goRigth()"> > </button> </div><div style="position: absolute; top: 50%; left: 5%; font-size: 50px; color: red;"><button onclick="goLeft()"> < </button></div>';
         document.getElementById("1").innerHTML = '<img src="img/carousel1.jpeg" class="img-fluid photoShadow" alt="">';
         document.getElementById("2").innerHTML = '<img src="img/carousel2.jpeg" class="img-fluid photoShadow" alt="">';
         document.getElementById("3").innerHTML = '<img src="img/carousel3.jpeg" class="img-fluid photoShadow" alt="">';
         document.getElementById("4").innerHTML = '<img src="img/carousel4.jpeg" class="img-fluid photoShadow" alt="">';
     }
-};
+}
+
+function goLeft()
+{
+    clickNumber --;
+    document.getElementById("carouselActivePhoto").innerHTML = '<img src="img/carousel' + clickNumber + '.jpeg" class="img-fluid slideRight" alt=""><div style="position: absolute; top: 50%; right: 5%; font-size: 50px; color: red;"> <button onclick="goRigth()"> > </button> </div><div style="position: absolute; top: 50%; left: 5%; font-size: 50px; color: red;"><button onclick="goLeft()"> < </button></div>';
+    if(clickNumber <= 0)
+    {
+        clickNumber = 8;
+        document.getElementById("carouselActivePhoto").innerHTML = '<img src="img/carousel8.jpeg" class="img-fluid slideRight photoShadow" alt=""><div style="position: absolute; top: 50%; right: 5%; font-size: 50px; color: red;"> <button onclick="goRigth()"> > </button> </div><div style="position: absolute; top: 50%; left: 5%; font-size: 50px; color: red;"><button onclick="goLeft()"> < </button></div>';
+        document.getElementById("1").innerHTML = '<img src="img/carousel5.jpeg" class="img-fluid photoShadow" alt="">';
+        document.getElementById("2").innerHTML = '<img src="img/carousel6.jpeg" class="img-fluid photoShadow" alt="">';
+        document.getElementById("3").innerHTML = '<img src="img/carousel7.jpeg" class="img-fluid photoShadow" alt="">';
+        document.getElementById("4").innerHTML = '<img src="img/carousel8.jpeg" class="img-fluid photoShadow" alt="">';
+    }
+
+    if(clickNumber == 4)
+    {
+        document.getElementById("1").innerHTML = '<img src="img/carousel1.jpeg" class="img-fluid photoShadow" alt="">';
+        document.getElementById("2").innerHTML = '<img src="img/carousel2.jpeg" class="img-fluid photoShadow" alt="">';
+        document.getElementById("3").innerHTML = '<img src="img/carousel3.jpeg" class="img-fluid photoShadow" alt="">';
+        document.getElementById("4").innerHTML = '<img src="img/carousel4.jpeg" class="img-fluid photoShadow" alt="">';
+    }
+}
 </script>
 
 <!-- Bootstrap script -->
