@@ -82,7 +82,9 @@
                     <img src="img/carousel1.jpeg" class="img-fluid photoShadow" alt="">
                 </div>
                 <div id="2" class="col-md-3">
-                    <img src="img/carousel2.jpeg" class="img-fluid photoShadow" alt="">
+                    <button onclick="changeImageButton()">
+                        <img src="img/carousel2.jpeg" class="img-fluid photoShadow" alt="">
+                    </button>
                 </div>
                 <div id="3" class="col-md-3">
                     <img src="img/carousel3.jpeg" class="img-fluid photoShadow" alt="">
@@ -233,6 +235,11 @@ function goLeft()
         document.getElementById("3").innerHTML = '<img src="img/carousel3.jpeg" class="img-fluid photoShadow" alt="">';
         document.getElementById("4").innerHTML = '<img src="img/carousel4.jpeg" class="img-fluid photoShadow" alt="">';
     }
+}
+
+function changeImageButton()
+{
+
 }
 </script>
 
