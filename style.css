@@ -247,4 +247,9 @@ a:hover {
 	.logo {
 		font-size: 3.5vw;
 	}
+
+    .fourCarouselPhotos
+    {
+        display: none;
+    }
 }
