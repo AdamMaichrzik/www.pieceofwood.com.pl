@@ -214,6 +214,16 @@ a:hover {
     font-size: 2vw;
 }
 
+.carouselPhotoClass
+{
+    width: 100%; 
+    height: 100%;
+}
+
+.mobileText
+{
+    display: none;
+}
 /* MEDIA */
 
 @media (max-width: 576px) {
@@ -240,6 +250,18 @@ a:hover {
 	.secondText {
 		font-size: 5vw;
 	}
+
+    .desktopText
+    {
+        display: none;
+    }
+
+    .mobileText
+    {
+        display: block;
+        text-align: left;
+        padding: 8%;
+    }
 
 	.mobileMarginHeader {
 		margin-top: 8%;
