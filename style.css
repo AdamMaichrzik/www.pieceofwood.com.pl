@@ -274,4 +274,9 @@ a:hover {
     {
         display: none;
     }
+
+    .mobileBorderFix
+    {
+        display: none;
+    }
 }
