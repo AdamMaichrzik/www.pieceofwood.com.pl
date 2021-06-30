@@ -2,7 +2,6 @@ body {
 	text-align: center;
 }
 
-/* Deleting button styling */
 button,
 input[type="submit"],
 input[type="reset"] {
@@ -48,7 +47,7 @@ input[type="reset"] {
     border-radius: 3px;
 }
 
-.object {
+.photoSlideWithShadow {
 	visibility: hidden;
 	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
 	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
@@ -60,7 +59,7 @@ input[type="reset"] {
     visibility: hidden;
 }
 
-.object:hover {
+.photoSlideWithShadow:hover {
 	opacity: 0.8;
 	cursor: pointer;
 }
@@ -85,7 +84,9 @@ input[type="reset"] {
 	letter-spacing: 1px;
 }
 
-.parallax1 {
+/* Parallax photo maybe for future use */
+.parallax1 
+{
 	/* The image used */
 	background-image: url("img/parallax1.jpg");
 	/* Set a specific height */
@@ -95,44 +96,7 @@ input[type="reset"] {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-.parallax2 {
-	/* The image used */
-	background-image: url("img/parallax2.jpg");
-	/* Set a specific height */
-	min-height: 500px;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.parallax3 {
-	/* The image used */
-	background-image: url("img/parallax3.jpg");
-	/* Set a specific height */
-	min-height: 500px;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.parallax4 {
-	/* The image used */
-	background-image: url("img/metalElementCloseup.jpg");
-	/* Set a specific height */
-	min-height: 500px;
-
-	/* Create the parallax scrolling effect */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+} 
 
 /* - Navigation bar - */
 .sidenav {
@@ -231,7 +195,7 @@ a:hover {
 		text-align: justify;
 		padding: 5%;
 	}
-	.object {
+	.photoSlideWithShadow {
 		margin-top: 8%;
 	}
 	.socialButton {

@@ -33,11 +33,12 @@
 
 </head>
 <body style="font-family: 'Open Sans Condensed', sans-serif;">
+    <!-- Navigation bar START -->
     <div class="container-full sticky-top bg-dark" id="navbar">
 		<div class="row" style="margin-right: 0%;">
 			<div class="col-3 col-md-2">
 				<div class="sidenav" id="mySidenav">
-				<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a> 
+				    <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a> 
 					<a href="arts.html">Arts</a> 
 					<a href="gallery.html">Gallery</a> 
 				</div>
@@ -50,49 +51,53 @@
 			</div>
 		</div>
 	</div>
+    <!-- Navigation bar END -->
 
-    <!-- Bootstrap carousel-->
+    <!-- Bootstrap carousel START-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
 
-        <div class="item active">
-            <img src="img/carousel1.jpeg" class="img-fluid carouselPhotoClass">
-            <div class="carousel-caption"></div>
-        </div>
-    
-        <div class="item">
-            <img src="img/carousel2.jpeg" class="img-fluid carouselPhotoClass">
-            <div class="carousel-caption"></div>
-        </div>
+            <div class="item active">
+                <img src="img/carousel1.jpeg" class="img-fluid carouselPhotoClass">
+                <div class="carousel-caption"></div>
+            </div>
         
-        <div class="item">
-            <img src="img/carousel3.jpeg" class="img-fluid carouselPhotoClass">
-            <div class="carousel-caption"></div>
-        </div>
+            <div class="item">
+                <img src="img/carousel2.jpeg" class="img-fluid carouselPhotoClass">
+                <div class="carousel-caption"></div>
+            </div>
+            
+            <div class="item">
+                <img src="img/carousel3.jpeg" class="img-fluid carouselPhotoClass">
+                <div class="carousel-caption"></div>
+            </div>
 
-        <div class="item">
-            <img src="img/metalElementCloseup.jpg" class="img-fluid carouselPhotoClass">
-            <div class="carousel-caption"></div>
-        </div>
+            <div class="item">
+                <img src="img/metalElementCloseup.jpg" class="img-fluid carouselPhotoClass">
+                <div class="carousel-caption"></div>
+            </div>
 
-        <div class="item">
-            <img src="img/carousel5.jpeg" class="img-fluid carouselPhotoClass">
-            <div class="carousel-caption"></div>
+            <div class="item">
+                <img src="img/carousel5.jpeg" class="img-fluid carouselPhotoClass">
+                <div class="carousel-caption"></div>
+            </div>
+        
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-    
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-        </a>
     </div>
-    </div>
+    <!-- Bootstrap carousel END-->
 
+    <!-- Main content START-->
     <div class="container" style="margin-top: 3%;">
+        <!-- First row company text -->
         <div class="row"> 
             <p class="secondText">
                 Pieceofwood to niewielka pracownia w małym miasteczku na południu Bawarii. <br>
@@ -100,25 +105,29 @@
                 W swojej kolekcji posiada drewniane kompozycje, mozaiki ścienne, kalendarze, zegary <br>
                 i wiele innych elementów dekoracyjnych.
             </p>
-        </div>
+       </div>
+        <!-- Second row some closups photos -->
         <div class="row" >
             <div class="col-md-4">
-                <img src="img/calendarWoodenSticks.jpg" class="img-fluid  object" style="max-width: 95%;">
+                <img src="img/calendarWoodenSticks.jpg" class="img-fluid  photoSlideWithShadow" style="max-width: 95%;">
             </div>
             <div class="col-md-4">
-                <img src="img/IMG_1485.jpeg" class="img-fluid object" style="max-width: 100%;">
+                <img src="img/IMG_1485.jpeg" class="img-fluid photoSlideWithShadow" style="max-width: 100%;">
             </div>
             <div class="col-md-4">
-                <img src="img/IMG_1479.jpeg" class="img-fluid object" style="max-width: 100%;">
+                <img src="img/IMG_1479.jpeg" class="img-fluid photoSlideWithShadow" style="max-width: 100%;">
             </div>
         </div>
     </div>
     <div class="container-fluid" style="margin-top: 3%;">
         <div class="row">
+            <!-- Working photo -->
             <div class="col-md-6">
-                <img src="img/working.jpg" class="img-fluid object" alt="">
+                <img src="img/working.jpg" class="img-fluid photoSlideWithShadow" alt="">
             </div>
+            <!-- Text on the right of the working photo -->
             <div class="col-md-6 mobileMarginHeader" style="padding-top: 3%;">
+                <!-- Desktop text view-->
                 <p class="secondText desktopText">
                     <span style="font-family: 'Open Sans Condensed', sans-serif; font-size: 2.5vw;">NIEPOWTARZALNOŚĆ  </span> 
                     <span style="font-family: 'Open Sans Condensed', sans-serif; font-size: 2vw;"> właśnie to jest największą wartością każdego rękodzieła.</span>
@@ -130,6 +139,7 @@
                         Właśnie dlatego, że wykonywane są ręcznie.
                     </span>
                 </p>
+                <!-- Mobile text view-->
                 <p class="secondText mobileText">
                     <span style="font-family: 'Open Sans Condensed', sans-serif; font-size: 8vw;">NIEPOWTARZALNOŚĆ  </span>  <br>
                     <span style="font-family: 'Open Sans Condensed', sans-serif;"> właśnie to jest największą wartością każdego rękodzieła.</span>
@@ -146,7 +156,9 @@
     </div>
 
     <div class="container">
+        <!-- Another text row-->
         <div class="row" >
+            <!-- Desktop text view-->
             <p class="secondText desktopText" >
                 Doskonałym uzupełnieniem niemal każdego pomieszczenia mogą okazać się ściany ozdobione przedmiotami <br>
                 z naturalnego drewna.
@@ -156,6 +168,7 @@
                  w dużym stopniu świadcząc o guście domowników. <br>
                 Wnętrze staje się cieplejsze, bardziej domowe, przytulne oraz swojskie.
             </p>  
+            <!-- Mobile text view-->
             <p class="secondText mobileText">
                 Doskonałym uzupełnieniem niemal każdego pomieszczenia mogą okazać się ściany ozdobione przedmiotami 
                 z naturalnego drewna.
@@ -168,28 +181,31 @@
         </div> 
     </div>
 
+    <!-- Four big arts photos -->
     <div class="container">
         <div class="row">
             <div class="col-md-3" style="padding: 1%;">
                 <a href="life.html">
-                    <img src="img/bigArts/lifeShadow.jpg" class="img-fluid object" alt="">
+                    <img src="img/bigArts/lifeShadow.jpg" class="img-fluid photoSlideWithShadow" alt="">
                 </a>
             </div>
             <div class="col-md-3" style="padding: 1%;">
-                <img src="img/bigArts/darkMosaicShadow.jpg" class="img-fluid object" alt="">
+                <img src="img/bigArts/darkMosaicShadow.jpg" class="img-fluid photoSlideWithShadow" alt="">
             </div>
             <div class="col-md-3" style="padding: 1%;">
-                <img src="img/bigArts/usaFlagShadow.jpg" class="img-fluid object" alt="">
+                <img src="img/bigArts/usaFlagShadow.jpg" class="img-fluid photoSlideWithShadow" alt="">
             </div>
             <div class="col-md-3" style="padding: 1%;">
-                <img src="img/bigArts/brightMosaicShadow.jpg" class="img-fluid object" alt="">
+                <img src="img/bigArts/brightMosaicShadow.jpg" class="img-fluid photoSlideWithShadow" alt="">
             </div>  
         </div>
     </div>
    
+    <!-- Some text with espresso art closup -->
     <div class="container">
         <div class="row" style="margin-top: 3%;">
             <div class="col-md-6" style="padding: 3%;"> 
+            <!-- Desktop text view -->
             <p class="secondText desktopText" style="font-size: 1.8vw;">
                 Elegancja i efektowność, a jednocześnie naturalność<br> 
                 i surowość sprawiają, że doskonale odnajdą się one <br>
@@ -198,6 +214,7 @@
                 w mieszkaniach urządzonych w nurcie loftu, <br>
                 gdzie połączenie betonu, szkła i drewna odgrywa znaczącą rolę, a także rustykalnym, odznaczającym się przewagą tego naturalnego surowca.
             </p>
+            <!-- Mobile text view -->
             <p class="secondText mobileText">
                 Elegancja i efektowność, a jednocześnie naturalność 
                 i surowość sprawiają, że doskonale odnajdą się one 
@@ -207,36 +224,40 @@
                 gdzie połączenie betonu, szkła i drewna odgrywa znaczącą rolę, a także rustykalnym, odznaczającym się przewagą tego naturalnego surowca.
             </p>
             </div>
+            <!-- Right side photo -->
             <div class="col-md-6">
-                <img src="img/blurredEspresso.jpeg" class="img-fluid object" alt="">
+                <img src="img/blurredEspresso.jpeg" class="img-fluid photoSlideWithShadow" alt="">
             </div>
         </div>
     </div>
 
-    </div>
+    <!-- Four espresso arts photos -->
     <div class="container">
         <div class="row" style="margin-top: 3%;">
             <div class="col-md-3">
-                <img src="img/espressoWithCoffee.jpeg" class="img-fluid object mb-4" alt="">
+                <img src="img/espressoWithCoffee.jpeg" class="img-fluid photoSlideWithShadow mb-4" alt="">
             </div>
             <div class="col-md-3">
-                <img src="img/kitchenCookBookTop.png" class="img-fluid object mb-4" alt="">
+                <img src="img/kitchenCookBookTop.png" class="img-fluid photoSlideWithShadow mb-4" alt="">
             </div>
             <div class="col-md-3">
-                <img src="img/espressoWithSmallCups.jpeg" class="img-fluid object mb-4" alt="">
+                <img src="img/espressoWithSmallCups.jpeg" class="img-fluid photoSlideWithShadow mb-4" alt="">
             </div>
             <div class="col-md-3">
-                <img src="img/redKitchenArt.jpeg" class="img-fluid object mb-4" alt="">
+                <img src="img/redKitchenArt.jpeg" class="img-fluid photoSlideWithShadow mb-4" alt="">
             </div>
         </div>
     </div>
 
+    <!-- Calendar text and photo container-->
     <div class="container">
         <div class="row" style="margin-top: 5%;">
+            <!-- Calendar photo-->
             <div class="col-md-6">
-                <img src="img/calendars/calendarCloseupRedBrick.jpg" class="img-fluid object" alt="">
+                <img src="img/calendars/calendarCloseupRedBrick.jpg" class="img-fluid photoSlideWithShadow" alt="">
             </div>
             <div class="col-md-6">
+                <!-- Decktop text view -->
                 <p class="secondText desktopText">
                     <span style=" font-family: 'Open Sans Condensed', sans-serif; font-size: 3vw;">...kiedy potem staje się teraz... <br> </span> 
                     <br> <br>
@@ -249,6 +270,7 @@
                 </p>
             </div>
             <div class="col-md-6">
+                <!-- Decktop text view -->
                 <p class="secondText mobileText">
                     <span style=" font-family: 'Open Sans Condensed', sans-serif; font-size: 8vw;">...kiedy potem staje się teraz... <br> </span> 
                     <br> <br>
@@ -261,30 +283,34 @@
                 </p>
             </div>
         </div>
+        <!-- Four calendars photos -->
         <div class="row" style="margin-top: 3%; margin-bottom: 8%;">
             <div class="col-md-3">
-                <img src="img/calendars/calendarWhiteBrick.jpg" class="img-fluid object" alt="">
+                <img src="img/calendars/calendarWhiteBrick.jpg" class="img-fluid photoSlideWithShadow" alt="">
             </div>
             <div class="col-md-3">
-                <img src="img/calendars/whiteBrickCloseup.jpg" class="img-fluid object" alt="">
+                <img src="img/calendars/whiteBrickCloseup.jpg" class="img-fluid photoSlideWithShadow" alt="">
             </div>
             <div class="col-md-3">
-                <img src="img/calendars/redBrickFlat2.jpg" class="img-fluid object" alt="">            
+                <img src="img/calendars/redBrickFlat2.jpg" class="img-fluid photoSlideWithShadow" alt="">            
             </div>
             <div class="col-md-3">
-                <img src="img/calendars/whiteWallFullCalendar.JPG" class="img-fluid object" alt="">
+                <img src="img/calendars/whiteWallFullCalendar.JPG" class="img-fluid photoSlideWithShadow" alt="">
             </div>
         </div>
     </div>
-    
+    <!-- Main content END-->
+
+    <!-- Footer START -->
+    <!-- Footer contact info -->
     <div class="container-fluid" style="background-color: #24242c; color: white;">
         <div class="row">
             <div class="col-md-5" >
-                <h1 class="secondText" style="font-size: 8vw;">Kontakt</h1>
+                <h1 class="secondText" style="font-size: 5vw; margin-top: 3%;">Kontakt</h1>
             </div>
             <div class="col-md-1 mobileBorderFix" style="border-left: 3px solid white; margin-top: 3%;"></div>
             <div class="col-md-5">
-                <p style="font-size: 3vw; margin-top: 3%; padding: 3%;">
+                <p style="font-size: 2vw; margin-top: 3%; padding: 3%;">
                     Zapraszamy do kontaktu. 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Curabitur id lectus ut libero porta semper vitae a mi. 
@@ -317,11 +343,13 @@
         </div>
     </div>
     </footer>
+    <!-- Footer END -->
 
 <!-- Scripts -->
 <script>
+    // Image slide effect 
 	$(window).scroll(function() {
-		$('.object').each(function(){
+		$('.photoSlideWithShadow').each(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
@@ -332,18 +360,18 @@
 	});
 </script>
 
-	<!-- Open and close navbar script-->
-	<script>
-        function openNav() 
-        {
-            document.getElementById("mySidenav").style.width = "180px";
-        }
-    
-        function closeNav() 
-        {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-        </script>
+<!-- Open and close navbar script-->
+<script>
+    function openNav() 
+    {
+        document.getElementById("mySidenav").style.width = "180px";
+    }
+
+    function closeNav() 
+    {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 
 <!-- Bootstrap script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
