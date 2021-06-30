@@ -224,15 +224,15 @@ a:hover {
 {
     display: none;
 }
-/* MEDIA */
 
+/* MEDIA */
 @media (max-width: 576px) {
 	.mainText {
 		text-align: justify;
 		padding: 5%;
 	}
 	.object {
-		padding-top: 8%;
+		margin-top: 8%;
 	}
 	.socialButton {
 		font-size: 21px;
