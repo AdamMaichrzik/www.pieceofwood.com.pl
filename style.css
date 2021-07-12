@@ -243,4 +243,14 @@ a:hover {
     {
         display: none;
     }
+
+	.mobileFontSizeHeader
+	{
+		font-size: 13vw !important;
+	}
+
+	.mobileFontSizeText
+	{
+		font-size: 5vw !important;
+	}
 }
