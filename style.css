@@ -189,9 +189,14 @@ a:hover {
     display: none;
 }
 
-.fourCarouselPhotosMobile
+.specyficationPhotoTextMobile
 {
 	display: none;
+}
+
+.specyficationPhotoTextDesktop
+{
+	display: block;
 }
 
 /* MEDIA */
@@ -239,12 +244,12 @@ a:hover {
 		font-size: 3.5vw;
 	}
 
-    .fourCarouselPhotosDesktop
+    .specyficationPhotoTextDesktop
     {
         display: none;
     }
 
-	.fourCarouselPhotosMobile
+	.specyficationPhotoTextMobile
 	{
 		display:flex;
 	}
