@@ -65,14 +65,29 @@
                     <button onclick="goLeft()"> < </button>
                 </div>
             </div>
-            <div class="row mt-5 fourCarouselPhotosMobile">
+                <div class="col-md-6 specyficationPhotoTextDesktop" style="margin-top: 5%;">
+                    <h1 class="mobileFontSizeHeader" style="font-size: 5vw;">Specyfikacja</h1>
+                    <p class="secondText" style="text-align: left; margin-top: 5%; margin-left: 8%;">
+                        Wysokość: 100cm <br>
+                        Szerokość: 150 cm <br>
+                        Grubość: 4 cm <br> <br>
+        
+                        Materiał dąb w 100% naturalny itp. 
+                        Ut vel pharetra lectus. 
+                        Phasellus convallis scelerisque sem, quis venenatis nunc lacinia at.
+                    </p>
+                    </p>
+                </div>
+        </div>
+        <!-- Four small photos under carousel -->
+        <div class="row mt-5">
                 <div id="smallCarousel1" class="col-3">
                     <button class="photoShadow" id="button1" onclick="changeImageButton(this.id)">
                         <img src="../../img/carousel1.jpeg" class="img-fluid" alt="">
                     </button>
                 </div>
                 <div id="smallCarousel2" class="col-3">
-                    <button  class="photoShadow" id="button2" onclick="changeImageButton(this.id)">
+                    <button class="photoShadow" id="button2" onclick="changeImageButton(this.id)">
                         <img src="../../img/carousel2.jpeg" class="img-fluid " alt="">
                     </button>
                 </div>
@@ -86,14 +101,15 @@
                         <img src="../../img/carousel4.jpeg" class="img-fluid " alt="">
                     </button>
                 </div>
-            </div>
+        </div>
+        <div class="specyficationPhotoTextMobile">
             <div class="col-md-6" style="margin-top: 5%;">
                 <h1 class="mobileFontSizeHeader" style="font-size: 5vw;">Specyfikacja</h1>
                 <p class="secondText" style="text-align: left; margin-top: 5%; margin-left: 8%;">
                     Wysokość: 100cm <br>
                     Szerokość: 150 cm <br>
                     Grubość: 4 cm <br> <br>
-    
+
                     Materiał dąb w 100% naturalny itp. 
                     Ut vel pharetra lectus. 
                     Phasellus convallis scelerisque sem, quis venenatis nunc lacinia at.
@@ -101,32 +117,6 @@
                 </p>
             </div>
         </div>
-        <!-- Four small photos under carousel -->
-        <div class="row fourCarouselPhotosDesktop">
-            <div class="col-md-6">
-                <div id="smallCarousel1" class="col-md-3">
-                    <button class="photoShadow" id="button1" onclick="changeImageButton(this.id)">
-                        <img src="../../img/carousel1.jpeg" class="img-fluid" alt="">
-                    </button>
-                </div>
-                <div id="smallCarousel2" class="col-md-3">
-                    <button class="photoShadow" id="button2" onclick="changeImageButton(this.id)">
-                        <img src="../../img/carousel2.jpeg" class="img-fluid " alt="">
-                    </button>
-                </div>
-                <div id="smallCarousel3" class="col-md-3">
-                    <button class="photoShadow" id="button3" onclick="changeImageButton(this.id)">
-                        <img src="../../img/carousel3.jpeg" class="img-fluid " alt="">
-                    </button>
-                </div>
-                <div id="smallCarousel4" class="col-md-3">
-                    <button class="photoShadow" id="button4" onclick="changeImageButton(this.id)">
-                        <img src="../../img/carousel4.jpeg" class="img-fluid " alt="">
-                    </button>
-                </div>
-            </div> 
-        </div>
-    </div>
     <!-- Another arts-->
     <div class="container-fluid">
         <h1 class="mt-3 mb-3 mobileFontSizeHeader" style="font-size: 5vw;"> Inne moje prace</h1>
@@ -151,7 +141,9 @@
             </a>            
     </div>  
     </div>
-
+</div>
+ <!-- Footer START -->
+    <!-- Footer contact info -->
     <div class="container-fluid" style="background-color: #24242c; color: white; margin-top: 3%;">
         <div class="row">
             <div class="col-md-5" >
@@ -168,28 +160,29 @@
             </div>
         </div>
     </div>
-
+    
     <!-- Footer -->
     <footer class="bg-dark text-center text-white">
-        <div class="container">
-            <div class="row">
-                <!-- Copyright -->
-                <div class="text-center p-3 pl-auto pr-auto">
-                    © 2020 Copyright:
-                    <a class="text-white mb-5" href="../../index.html" style="text-decoration: none;">Pieceofwood</a> <br>
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i class="bi bi-facebook socialButton"></i>
-                    </a>
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i class="bi bi-instagram socialButton"></i>
-                    </a>
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                        <i class="bi bi-envelope socialButton"></i>
-                    </a>
-                </div>
+    <div class="container">
+        <div class="row">
+            <!-- Copyright -->
+            <div class="text-center p-3 pl-auto pr-auto">
+                © 2020 Copyright:
+                <a class="text-white mb-5" href="index.html" style="text-decoration: none;">Pieceofwood</a> <br>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="bi bi-facebook socialButton"></i>
+                </a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="bi bi-instagram socialButton"></i>
+                </a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="bi bi-envelope socialButton"></i>
+                </a>
             </div>
         </div>
-        </footer> 
+    </div>
+    </footer>
+    <!-- Footer END -->
 
     <!-- Scripts START -->
     <script>
