@@ -189,8 +189,13 @@ a:hover {
     display: none;
 }
 
+.fourCarouselPhotosMobile
+{
+	display: none;
+}
+
 /* MEDIA */
-@media (max-width: 576px) {
+@media (max-width: 767px) {
 	.mainText {
 		text-align: justify;
 		padding: 5%;
@@ -234,10 +239,15 @@ a:hover {
 		font-size: 3.5vw;
 	}
 
-    .fourCarouselPhotos
+    .fourCarouselPhotosDesktop
     {
         display: none;
     }
+
+	.fourCarouselPhotosMobile
+	{
+		display:flex;
+	}
 
     .mobileBorderFix
     {
