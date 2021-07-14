@@ -269,3 +269,10 @@ a:hover {
 		font-size: 5vw !important;
 	}
 }
+
+.smallCarouselPhoto
+{
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
